@@ -22,12 +22,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
   newText:{
     fontSize:22,
+    fontWeight:'bold',
+    justifyContent:'center',
     fontFamily:'Monaco', 
     marginVertical:18,
     textAlign:'center',
-    fontStyle:'italic',
+    color:'FAE8ED'
     
   }
 });

@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TextInput, View } from 'react-native';
+import { Alert, Button, StyleSheet, Text, TextInput, View } from 'react-native';
 
 export default function App() {
   return (
@@ -10,6 +10,10 @@ export default function App() {
       <Text style={styles.newText}>Enter your surname here:</Text>
       <TextInput placeholder='Surname'></TextInput>
       <StatusBar style="auto" />
+      <Button
+      title='Press here'
+      color="#f194ff"
+      onPress={() => Alert.alert('Simple Button pressed')}/>
     </View>
   );
 }

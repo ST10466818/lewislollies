@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { Alert, Button, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Alert, Button, StyleSheet, Text, TextInput, View , Image} from 'react-native';
 
 export default function App() {
   return (
@@ -14,6 +14,8 @@ export default function App() {
       title='Press here'
       color="#f194ff"
       onPress={() => Alert.alert('Simple Button pressed')}/>
+      <Image source={require("./assets/imgone.jpg")}
+        style={styles.image}/>
     </View>
   );
 }
@@ -35,6 +37,10 @@ const styles = StyleSheet.create({
     marginVertical:18,
     textAlign:'center',
     color:'#FFFF',
-    
+  },
+
+  image:{
+    width: 150,
+    height: 150,
   }
 });
